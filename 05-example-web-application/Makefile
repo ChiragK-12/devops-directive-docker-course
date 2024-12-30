@@ -4,7 +4,7 @@ DATABASE_URL:=postgres://postgres:foobarbaz@localhost:5432/postgres
 run-postgres:
 	@echo Starting postgres container
 	-docker run \
-		-e POSTGRES_PASSWORD=foobarbaz \
+		-e POSTGRES_PASSWORD=elephant \
 		-v pgdata:/var/lib/postgresql/data \
 		-p 5432:5432 \
 		postgres:15.1-alpine
